@@ -1,4 +1,4 @@
-public class MyClass  
+public class MyClass1  
 {  
     private static MyClass instance;  
     public static MyClass GetInstance()  
