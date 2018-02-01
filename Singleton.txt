@@ -1,0 +1,16 @@
+public class MyClass  
+{  
+    private static MyClass instance;  
+    public static MyClass GetInstance()  
+    {  
+        if (!instance)  
+        {  
+            instance = GameObject.FindObjectOfType(typeof(MyClass));  
+            if (!instance)  
+                Debug.LogError("There needs to be one active MyClass script on a GameObject in your scene.");  
+        }  
+   
+        return instance;  
+    }  
+}  
+
